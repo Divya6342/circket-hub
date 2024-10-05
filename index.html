@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Legends Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Cricket Legends Hub</h1>
+        <p>Your destination to explore the legendary stars of cricket!</p>
+    </header>
+
+    <!-- Home Page Section with Featured Players -->
+    <section id="home">
+        <h2>Welcome to the World of Cricket</h2>
+        <p>Explore the lives and careers of the greatest cricket legends from around the world.</p>
+        <h3>Featured Players</h3>
+        <div class="featured-players">
+            <img src="dhoni.jpeg" alt="Player 1">
+            <img src="kholi.jpeg" alt="Player 2">
+            <img src="hardik.jpeg" alt="Player 3">
+        </div>
+    </section>
+
+    <!-- Player Profiles Section -->
+    <section id="profiles">
+        <h2>Cricket Legends</h2>
+        <div class="player-profile">
+            <img src="dhoni.jpeg" alt="Player 1">
+            <h3>MS Dhoni</h3>
+            <p>Country: India</p>
+            <p>Career Runs: 1000</p>
+            <p>Notable Achievements: World Cup</p>
+        </div>
+<br>
+<br>
+        <div class="player-profile">
+            <img src="kholi.jpeg" alt="Player 2">
+            <h3>Virat Kohli</h3>
+            <p>Country: India</p>
+            <p>Career Wickets: 100</p>
+            <p>Notable Achievements: Test Series</p>
+        </div>
+    </section>
+
+    <!-- Interactive Map Section -->
+    <section id="map">
+        <div class="Map-page">
+        <h2>Explore Players by Country</h2>
+        <p>Click on a country to learn more about the cricket legends from that region.</p>
+        <img src="map.jpeg" alt=" " class="image">
+        <div id="world-map"></div>
+    </div>
+    </section>
+
+    <!-- Top Matches Section -->
+    <section id="top-matches">
+        <h2>Top Matches</h2>
+        <div class="match-highlight">
+            <h3>Match Title</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            <p>Description of the match and its significance.</p>
+        </div>
+    </section>
+
+    <!-- Fan Zone Section -->
+    <section id="fan-zone">
+        <h2>Fan Zone</h2>
+        <h3>Submit Your Favorite Player Stories</h3>
+        <form id="fan-submission-form">
+            <textarea id="fan-story" placeholder="Share your story about your favorite player..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <h3>Vote for the Greatest Player</h3>
+        <div class="vote-options">
+            <button onclick="vote('Player 1')">Player 1</button>
+            <button onclick="vote('Player 2')">Player 2</button>
+            <button onclick="vote('Player 3')">Player 3</button>
+        </div>
+        <p id="vote-result"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
